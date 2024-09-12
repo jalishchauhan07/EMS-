@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    min-width: 280px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding: 10px 0px;
+    /* transition: background-color 0.3s ease, padding 0.3s ease; */
+}
+
+.section:hover {
+    border-radius: 10px;
+}
+
+.btnSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    padding: 12px 25px;
+    background-color: #008cba;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 140, 186, 0.4);
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0072a1;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 140, 186, 0.6);
+}
+
+.button:active {
+    background-color: #005f73;
+    transform: scale(0.96);
+}
+
+.input {
+    width: 95%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.input:focus {
+    border-color: #008cba;
+    box-shadow: 0 0 5px rgba(0, 140, 186, 0.4);
+    outline: none;
+    background-color: white;
+}
+
+.input:hover {
+    border-color: #0072a1;
+}

@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    gap: 2.5rem;
+    background-color: #e8f0fe;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.questionSection {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.questionSection:hover {
+    background-color: #f1f1f1;
+}
+
+.optionSection {
+    display: grid;
+    height: 50%;
+    color: #555;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: 2/4;
+    gap: 1rem;
+
+}
+
+.optionSection div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.buttonSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.buttonSection button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buttonSection button:hover {
+    background: #0056b3
+}
